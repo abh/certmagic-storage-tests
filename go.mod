@@ -1,4 +1,4 @@
-module github.com/oyato/certmagic-storage-tests
+module github.com/abh/certmagic-storage-tests
 
 go 1.24
 
