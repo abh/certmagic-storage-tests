@@ -1,15 +1,15 @@
 package tests
 
 import (
-	"github.com/caddyserver/certmagic"
-	"io/ioutil"
 	"os"
 	"path/filepath"
 	"testing"
+
+	"github.com/caddyserver/certmagic"
 )
 
 func TestFileStorage(t *testing.T) {
-	tempDir, err := ioutil.TempDir("", "certmagic-storage-tests-")
+	tempDir, err := os.MkdirTemp("", "certmagic-storage-tests-")
 	if err != nil {
 		t.Fatalf("Cannot create temp directory: %s", err)
 	}
